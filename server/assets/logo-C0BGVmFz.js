@@ -1,0 +1,1 @@
+import"./rolldown-runtime-B0Z9INg1.js";import{t as e}from"./react-DVplv7_D.js";import{t}from"./jsx-runtime-B74pBk57.js";e();var n=t(),r=({size:e=24,className:t=``,...r})=>(0,n.jsx)(`img`,{src:`/logo.svg`,alt:`Markrelay`,width:e,height:e,className:t,...r});export{r as t};

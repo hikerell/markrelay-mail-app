@@ -1,0 +1,1 @@
+import{r as e}from"./redirect-DmtLUW0N.js";import{n as t,t as n}from"./lazyRouteComponent-CVxC1lt3.js";var r=t(`/_protected/space`)({beforeLoad:({context:t})=>{if(t.user.role===`admin`)throw e({to:`/admin`});if(t.user.role!==`user`)throw e({to:`/403`})},component:n(()=>import(`./route-CCAuF3F3.js`),`component`)});export{r as t};

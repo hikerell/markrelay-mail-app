@@ -1,0 +1,1 @@
+import{t as e}from"./jsx-runtime-B74pBk57.js";import{t}from"./broadcast-list-page-De1VGSpX.js";var n=e();function r(){return(0,n.jsx)(t,{workspace:`admin`})}export{r as component};

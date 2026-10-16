@@ -1,0 +1,43 @@
+MarkRelay Mail License
+
+Copyright (c) MarkRelay. All rights reserved.
+
+MarkRelay Mail is proprietary software. This repository is public only so
+that Cloudflare can deploy and update installations of it. Being able to see,
+download, or copy these files gives you no right to use them.
+
+1. License required. You may deploy and use MarkRelay Mail only with a valid
+   license purchased from MarkRelay at https://markrelay.com, and only as that
+   license and the MarkRelay Terms of Service
+   (https://markrelay.com/terms-of-service) allow. Each license covers a
+   single Cloudflare account.
+
+2. Restrictions. Unless your license expressly allows it, you may not:
+   (a) deploy or use MarkRelay Mail without a valid license, or after your
+       license has ended or been revoked;
+   (b) remove, disable, bypass, or tamper with license activation, license
+       checks, or any other license enforcement;
+   (c) modify, adapt, translate, or create derivative works of the software;
+   (d) copy, publish, redistribute, sell, rent, lend, sublicense, or
+       otherwise make the software available to others, except through the
+       repository copy Cloudflare creates for your own licensed deployment;
+   (e) reverse engineer, decompile, or disassemble the software, except to
+       the extent applicable law expressly permits despite this limitation.
+
+3. Ownership. MarkRelay owns the software and all rights in it. All rights
+   not expressly granted under a valid license are reserved.
+
+4. Termination. Your rights end automatically if you breach this license or
+   your license ends or is revoked. You must then stop using the software and
+   delete your deployments and copies of it.
+
+5. No warranty. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY
+   KIND, EXPRESS OR IMPLIED, INCLUDING THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. IN NO EVENT SHALL
+   MARKRELAY BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY ARISING FROM
+   OR IN CONNECTION WITH THE SOFTWARE OR ITS USE, EXCEPT AS THE MARKRELAY
+   TERMS OF SERVICE OR APPLICABLE LAW REQUIRE.
+
+The license you purchase and the MarkRelay Terms of Service govern if they
+conflict with this file. A Source License grants its own rights to the source
+code, delivered separately.

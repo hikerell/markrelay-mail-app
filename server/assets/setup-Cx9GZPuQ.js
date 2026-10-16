@@ -1,0 +1,1 @@
+import{n as e,t}from"./lazyRouteComponent-CVxC1lt3.js";import{r as n}from"./setup.public-Dw-VUsTd.js";var r=e(`/setup`)({component:t(()=>import(`./setup-DbWkipK5.js`),`component`),loader:async()=>{let e=await n();if(e.adminExists)throw Error(`Access denied: setup has already been completed`);return{license:e.license}}});export{r as t};

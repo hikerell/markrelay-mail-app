@@ -1,0 +1,87 @@
+// MarkRelay release config. Cloudflare fills in resource IDs on first deploy.
+{
+	"name": "markrelay-mail-app",
+	"main": "./server/index.js",
+	"no_bundle": true,
+	"workers_dev": true,
+	"preview_urls": false,
+	"compatibility_date": "2025-11-28",
+	"compatibility_flags": [
+		"nodejs_compat",
+		"global_fetch_strictly_public"
+	],
+	"rules": [
+		{
+			"type": "ESModule",
+			"globs": [
+				"**/*.js",
+				"**/*.mjs"
+			]
+		}
+	],
+	"triggers": {
+		"crons": [
+			"*/5 * * * *",
+			"0 4 * * *"
+		]
+	},
+	"assets": {
+		"directory": "./client"
+	},
+	"send_email": [
+		{
+			"name": "EMAIL"
+		}
+	],
+	"queues": {
+		"producers": [
+			{
+				"binding": "WEBHOOK_QUEUE",
+				"queue": "markrelay-mail-webhook-queue"
+			},
+			{
+				"binding": "BROADCAST_QUEUE",
+				"queue": "markrelay-mail-broadcast-queue"
+			}
+		],
+		"consumers": [
+			{
+				"queue": "markrelay-mail-webhook-queue",
+				"max_batch_size": 1,
+				"max_retries": 3,
+				"dead_letter_queue": "markrelay-mail-webhook-dlq"
+			},
+			{
+				"queue": "markrelay-mail-broadcast-queue",
+				"max_batch_size": 1,
+				"max_concurrency": 1,
+				"max_retries": 3,
+				"dead_letter_queue": "markrelay-mail-broadcast-dlq"
+			},
+			{
+				"queue": "markrelay-mail-email-events-queue",
+				"max_batch_size": 10,
+				"max_batch_timeout": 5,
+				"max_concurrency": 1,
+				"max_retries": 3,
+				"dead_letter_queue": "markrelay-mail-email-events-dlq"
+			}
+		]
+	},
+	"r2_buckets": [
+		{
+			"binding": "R2",
+			"bucket_name": "markrelay-mail-r2","preview_bucket_name": "markrelay-mail-r2"
+		}
+	],
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_name": "markrelay-mail-d1",
+			"migrations_dir": "./drizzle","database_id": "a619ddc0-400e-4b10-98a1-869c41beaef9"
+		}
+	],
+	"observability": {
+		"enabled": true
+	}
+}

@@ -1,0 +1,1 @@
+import{t as e}from"./jsx-runtime-NZYk81nU.js";import{t}from"./admin-api-keys-view-DKfZD2IT.js";var n=e(),r=()=>(0,n.jsx)(t,{});export{r as component};

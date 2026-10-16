@@ -1,0 +1,1 @@
+import{t as e}from"./useRouteContext-Gj4_rxlj.js";function t(){return e({from:`/_protected`}).user}export{t};

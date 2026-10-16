@@ -1,0 +1,1 @@
+import{t as e}from"./jsx-runtime-NZYk81nU.js";import{t}from"./template-detail-page-Ctc8LHPq.js";import{t as n}from"./index-Ds82kkyq.js";var r=e();function i(){let{id:e}=n.useParams();return(0,r.jsx)(t,{templateId:e,workspace:`space`})}export{i as component};

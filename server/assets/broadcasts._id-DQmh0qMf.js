@@ -1,0 +1,1 @@
+import{r as e}from"./redirect-DmtLUW0N.js";import{n as t,t as n}from"./lazyRouteComponent-CVxC1lt3.js";var r=t(`/_protected/space/broadcasts/$id`)({beforeLoad:({params:t})=>{if(t.id===`new`)throw e({to:`/space/broadcasts`})},component:n(()=>import(`./broadcasts._id-CSbPeNcl.js`),`component`)});export{r as t};
