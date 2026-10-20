@@ -1,0 +1,1 @@
+import{f as e}from"./credential-scope-C4WD6JGf.js";import{r as t}from"./auth-BMOZJ57p.js";async function n(n){let r=await t();if(!await e({userId:r.user.id,userRole:r.user.role,...n}))throw Error(`Forbidden: You do not have access to this mailbox`);return r}export{n as t};

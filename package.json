@@ -1,0 +1,24 @@
+{
+  "name": "markrelay-mail-app",
+  "version": "0.4.0",
+  "private": true,
+  "scripts": {
+    "deploy": "node scripts/update.mjs && wrangler d1 migrations apply DB --remote && wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "4.149.0"
+  },
+  "cloudflare": {
+    "bindings": {
+      "DB": {
+        "description": "Stores mail, users, and settings. The schema is created on first deploy."
+      },
+      "R2": {
+        "description": "Stores attachments and images."
+      },
+      "BETTER_AUTH_SECRET": {
+        "description": "Signs sessions. Use a long random value, such as the output of `openssl rand -base64 32`."
+      }
+    }
+  }
+}

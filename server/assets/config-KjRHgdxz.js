@@ -1,0 +1,1 @@
+var e={name:`MarkRelay Mail App`},t=`https://markrelay.com`,n={k1:`ZhJyDusocP4agZjmWvGINllwguAb7jw0PcL2vSaP-3I`};export{t as n,e as r,n as t};

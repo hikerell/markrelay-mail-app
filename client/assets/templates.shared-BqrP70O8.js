@@ -1,0 +1,1 @@
+import{t as e}from"./jsx-runtime-NZYk81nU.js";import{t}from"./shared-template-list-page-Dp1-i3ZF.js";var n=e();function r(){return(0,n.jsx)(t,{workspace:`space`})}export{r as component};

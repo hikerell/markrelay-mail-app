@@ -1,0 +1,1 @@
+import{n as e,t}from"./lazyRouteComponent-CVxC1lt3.js";var n=e(`/_protected/space/webmail`)({validateSearch:e=>({folder:e.folder,mailbox:e.mailbox,compose:e.compose}),component:t(()=>import(`./webmail-vR6AEt8_.js`),`component`)});export{n as t};

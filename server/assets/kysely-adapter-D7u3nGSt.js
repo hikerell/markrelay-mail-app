@@ -1,0 +1,1 @@
+export{t as createKyselyAdapter,a as kyselyAdapter}from"./dist-CyU1Nt0r.js";

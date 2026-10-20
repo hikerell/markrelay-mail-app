@@ -1,0 +1,1 @@
+import{t as e}from"./jsx-runtime-B74pBk57.js";import{t}from"./broadcast-editor-page-CzhXNn_j.js";import{t as n}from"./broadcasts._id-GKZu2P6e.js";var r=e();function i(){let{id:e}=n.useParams();return(0,r.jsx)(t,{routeBroadcastId:e,workspace:`admin`})}export{i as component};

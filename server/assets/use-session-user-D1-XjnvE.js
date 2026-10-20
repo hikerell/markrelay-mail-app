@@ -1,0 +1,1 @@
+import{t as e}from"./useRouteContext-Bc_FdeKN.js";function t(){return e({from:`/_protected`}).user}export{t};

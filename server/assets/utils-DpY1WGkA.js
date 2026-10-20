@@ -1,0 +1,1 @@
+import{a as e}from"./rolldown-runtime-B0Z9INg1.js";import{t}from"./react-DVplv7_D.js";var n=e(t(),1),r=n.use,i=n.useEffect;export{i as n,r as t};
